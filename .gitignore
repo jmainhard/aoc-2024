@@ -2,3 +2,6 @@ node_modules
 dist
 .DS_Store
 .env
+
+# Vitests's temporary tsconfig file
+tsconfig.vitest-temp.json
