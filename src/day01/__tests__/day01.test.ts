@@ -19,6 +19,6 @@ describe('Day 1', () => {
   });
 
   test('Part 2', () => {
-    expect(part2('')).toBe(0);
+    expect(part2(input)).toBe(31);
   });
 });
