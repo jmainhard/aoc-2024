@@ -1,8 +1,8 @@
-# Advent of Code 2024 TypesScript Template
+# Advent of Code 2024 TypesScript
 
-This is a TypeScript template for [advent of code 2024](https://adventofcode.com/2024).
+This is my solutions repository for [advent of code 2024](https://adventofcode.com/2024).
 
-The template was built with
+Built with:
 
 - [pnpm](https://pnpm.io/)
 - [typescript](https://www.typescriptlang.org/)
@@ -11,8 +11,8 @@ The template was built with
 ## Usage
 
 ```shell
-$ git clone https://github.com/2wndrhs/aoc-2024-typescript-template.git
-$ cd aoc-2024-typescript-template
+$ git clone https://github.com/jmainhard/aoc-2024.git
+$ cd aoc-2024
 
 # install dependencies
 $ pnpm install
@@ -26,7 +26,7 @@ $ pnpm start day01
 
 ## Generate
 
-You can generate all necessary files for AoC solution with a simple command:
+You can generate all necessary files for AoC solution with the next command:
 
 ```shell
 $ pnpm gen day01
@@ -51,3 +51,5 @@ The env file should look like below.
 ```
 AOC_SESSION={YOUR_AOC_SESSION_VALUE}
 ```
+
+**Template from [@2wndrhs](https://github.com/2wndrhs/aoc-2024-typescript-template.git)**
