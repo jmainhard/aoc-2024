@@ -4,7 +4,7 @@ function isIncreasing(report: number[]) {
   return report[0] < report[1];
 }
 
-function isSafe(reportLevels: number[]) {
+export function isSafe(reportLevels: number[]) {
   const increasing = isIncreasing(reportLevels);
   const decreasing = !increasing;
   for (let index = 0; index < reportLevels.length - 1; index++) {
