@@ -2,18 +2,17 @@
 
 export function part1(input: string): number {
   const split = input.split('mul');
-  let result = 0;
-  split.forEach((splitted) => {
-    if (splitted.startsWith('(')) {
-      const closeMul = splitted.indexOf(')');
-      if (closeMul > 3 && closeMul < 9) {
-        const [a, b] = splitted.slice(1, closeMul).split(',').map(Number);
-        if (isNaN(a) || isNaN(b)) return;
-        result += a * b;
-      }
-    }
-  });
-  return result;
+  const sum = split.reduce((accum, mul) => {
+    if (!mul.startsWith('(')) return accum;
+    const closeMul = mul.indexOf(')');
+
+    if (closeMul < 4 || closeMul > 8) return accum;
+    const [a, b] = mul.slice(1, closeMul).split(',').map(Number);
+
+    if (isNaN(a) || isNaN(b)) return accum;
+    return accum + a * b;
+  }, 0);
+  return sum;
 }
 
 // search for valid mul based on position of closing parenthesis
